@@ -1,0 +1,30 @@
+﻿@{ ViewData["Title"] = "Home Page"; }
+
+<style>
+    body {
+        background-image: url('https://cdn.wallpapersafari.com/29/19/DwT9ug.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .btns {
+        position: relative;
+        padding-top: 5%;
+        
+    }
+
+</style>
+<body>
+    
+    <div class=" text-center">
+        <h1 style="color:white; text-align:left">Welcome to Laptop Store! </h1>
+        <div class="btns text-left">
+            <a asp-controller="Admin" asp-action="login"> <button mdbRipple type="button" class="btn  btn-light btn-lg mr-4"> Admin Login</button> </a>
+            <a asp-controller="Accounts" asp-action="login"> <button mdbRipple type="button" class="btn btn-light btn-lg mr-4"> Customer Login </button></a>
+            <a asp-controller="Seller" asp-action="login"> <button mdbRipple type="button" class="btn  btn-light btn-lg mr-4">Seller Login</button> </a>
+
+        </div>
+    </div>
+
+</body>

@@ -1,0 +1,38 @@
+﻿@model IdentitySecuredApp.Models.Laptop
+@{
+    ViewBag.Title = "Laptop Details";
+}
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <title>Laptop Store</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/product/">
+</head>
+<body>
+
+    <section class="bg-light"  style="border-block:2px">
+        <div class="container bg-light" >
+            <div class="card">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 text-center col-md-8 p-lg-5 mx-auto my-5">
+                        <h2>@Model.Title</h2>
+                        <h4>Price : &#8377;@Model.Price</h4>
+                        <p style="text-align:justify">Description : @Model.Description</p>
+                        <a asp-action="UserIndex" class="btn btn-danger">Back</a>
+                        <a asp-action="Payments" class="btn btn-secondary">Buy Now</a>
+
+                    </div>
+                    
+                        <div class="col-lg-4 order-1 order-lg-2"><img src="@Model.ImageUrl" alt="..." class="img-fluid"></div>
+
+                </div>
+            </div>
+            </div>
+</section>
+    </body>
+    </html>
+
